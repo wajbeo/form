@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        .table-employee {
+            width: 500px;
+            /*  border-collapse: collapse;*/
+        }
+
+
+        tr,td {
+            border: 1px solid red;
+        }
+        #table-header {
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="" method="get" enctype="multipart/form-data">
+    <!--method get khi nhap du lieu se gui len form url-->
+    <!--me thod post ko du lieu len form url-->
+    <h2>login</h2>
+    <div>
+        <label for="email">email</label>
+        <input type = "text" id="email" name="email">
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input type="text" id="password" name="password">
+    </div>
+    <div>
+        <label for="remember-me">remember me</label>
+        <input type="checkbox" id="remember-me" name="remember">
+    </div>
+    <div>
+        <label for="avatar">avatar</label>
+        <input type="file" id="avatar" name="avatar">
+    </div>
+    <<!-- for trung voi id, type file de chon file up len. Neu co file bat buoc phai dung post-->
+    <<!-- neu co file phai them lenh enctype="multipart/form-data-->
+
+    <button type = "submit">login</button>
+    <button type = "reset">clear</button>
+    <!-- khi mo form phai dinh hinh method -->
+</form>
+
+<br>
+
+<table class="table-employee">
+    <caption>hahaha</caption>
+    <--! mo ta bang -->
+    <tr id="table-header">
+        <td>stt</td>
+        <td>ho ten</td>
+        <td>email</td>
+        <td>phone</td>
+    </tr>
+    <tr>
+        <td colspan="2">1 a</td>
+        <!-- colpan = gia tri de gop cot trong bang-->
+        <td>a@</td>
+        <td>0012</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>b</td>
+        <td>b@</td>
+        <td>241</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td rowspan="2">c d</td>
+        <td>c@</td>
+        <td>444</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>d@</td>
+        <td>234</td>
+    </tr>
+    <!-- trong table bat buoc phai la tr tru <caption>emphot -->
+</table>
+</body>
+</html>
